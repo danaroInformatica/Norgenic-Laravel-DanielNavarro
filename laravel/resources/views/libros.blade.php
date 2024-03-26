@@ -3,7 +3,7 @@
 
 @section('content')
 
-Libros
+    a
 
 @endsection('content')
 

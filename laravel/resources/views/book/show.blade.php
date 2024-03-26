@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.plantilla')
 
 @section('template_title')
     {{ $book->name ?? __('Show') . " " . __('Book') }}

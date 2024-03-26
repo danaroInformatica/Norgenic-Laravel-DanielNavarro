@@ -34,7 +34,7 @@
                             <table class="table table-striped table-hover">
                                 <thead class="thead">
                                     <tr>
-                                        <th>No</th>
+                                        <th>Nº</th>
                                         
 										<th>Title</th>
 										<th>Author</th>

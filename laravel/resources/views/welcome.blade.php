@@ -7,4 +7,6 @@
 
 <p>Contenido de la página principal</p>
 
+<p>@lang('messages.welcome')</p>
+
 @endsection('content')

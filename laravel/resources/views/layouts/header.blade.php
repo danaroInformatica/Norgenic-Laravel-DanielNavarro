@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ session('locale', config('app.locale')) }}">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -29,6 +29,17 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="{{ url('/books') }}">Libros</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="{{ url('/contacto') }}">Contacto</a></li>
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <form action="{{ route('cambiar.idioma', app()->getLocale()) }}" method="get">
+                                <select name="idioma" onchange="this.form.submit()">
+                                    @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                                        <option value="{{ $localeCode }}" @if($localeCode == app()->getLocale()) selected @endif>
+                                            {{ $properties['native'] }}
+                                        </option>
+                                    @endforeach
+                                </select>
+                            </form>
+                        </li>
                     </ul>
                 </div>
             </div>

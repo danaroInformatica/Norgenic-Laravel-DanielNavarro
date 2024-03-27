@@ -1,6 +1,6 @@
 <?php
-    return [
-        'welcome' => 'Bienvenido',
-        'hello' => 'Hola',
-        'greetings' => '¡Saludos!'
-    ];
+
+return [
+    'welcome' => '¡Bienvenido a nuestro sitio web!',
+    'prueba' => 'Prueba 2',
+];

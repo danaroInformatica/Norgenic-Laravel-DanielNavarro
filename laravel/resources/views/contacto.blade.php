@@ -4,7 +4,7 @@
 @section('content')
 
 
-    <div class="container">
+    <div class="container margin-default">
         <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
         <!-- Icon Divider-->
         <div class="divider-custom">
@@ -34,7 +34,9 @@
                             <p class="text-danger">{{ $message }}</p>
                         @enderror
                     </div>
-                    <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Enviar</button>
+                    <div class="text-center">
+                        <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Enviar</button>
+                    </div>
                     <!-- has successfully submitted-->
                     <div class="d-none" id="submitSuccessMessage">
                         <div class="text-center mb-3">

@@ -1,0 +1,16 @@
+.header{
+    position: relative;
+}
+.margin-default{
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+.masthead{
+    padding: 45px 0;
+}
+.image-profile{
+    border-radius: 150px;
+}
+#submitButton{
+    margin-top: 25px;
+}

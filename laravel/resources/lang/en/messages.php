@@ -1,6 +1,5 @@
 <?php
     return [
-        'welcome' => 'Welcome',
-        'hello' => 'Hola',
-        'greetings' => '¡Saludos!'
+        'welcome' => 'Welcome to my new site!',
+        'prueba' => 'Prueba 1',
     ];
